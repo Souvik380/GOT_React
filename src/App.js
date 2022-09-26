@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Heading from './Components/Heading';
 import Families from './Components/Families';
+import Characters from './Components/Characters';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Heading />
       <Families />
+      <Characters />
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    background-image: linear-gradient(lightblue,violet);
+    height:150px;
+}
