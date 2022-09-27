@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "./Button"
+import "../Styles/Buttons.css"
 
 class Buttons extends React.Component{
     
@@ -9,7 +10,7 @@ class Buttons extends React.Component{
         // console.log("--<",families)
 
         return(
-            <>
+            <div className="buttons">
                 {
                     families.map(family=>{
                         return(<Button 
@@ -18,7 +19,7 @@ class Buttons extends React.Component{
                         />)
                     })
                 }
-            </>
+            </div>
         )
     }
 

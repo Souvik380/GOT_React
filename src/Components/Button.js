@@ -1,4 +1,6 @@
 import React from "react"
+import "../Styles/Button.css"
+
 class Button extends React.Component{
     
     render(){
@@ -6,9 +8,9 @@ class Button extends React.Component{
         const handler=this.props.handler
 
         return(
-            <>
-                <button onClick={(e)=>handler(e)}>{name}</button>
-            </>
+            
+                <button className="button"  onClick={(e)=>handler(e)}>{name}</button>
+            
         )
     }
 

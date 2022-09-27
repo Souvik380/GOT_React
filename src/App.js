@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import got from './data';
 import React from 'react';
@@ -51,27 +50,32 @@ class App extends React.Component{
 
   render(){
     const people=this.state.characters
-    console.log(houseNames)
+    
     return(
       <div className="App">
-        <div>
+
+        <div className="header">
           <h1>People of GOT</h1>
           <input id="search-input" type="text" placeholder="Search your GOT character" onKeyUp={(e)=>this.handleInput(e)}/>
         </div>
+
         <Buttons clickHandler={this.clickHandler} families={houseNames} />
 
+      <div className="card">
         {
           people.map(person=>{
               return (
-              <Card 
-                  name={person.name}
-                  image={person.image}
-                  desc={person.description}
-                  link={person.wikiLink}
-              />
+              
+                <Card 
+                    name={person.name}
+                    image={person.image}
+                    desc={person.description}
+                    link={person.wikiLink}
+                />
               )
           })
         }
+        </div>
 
       </div>
     )
