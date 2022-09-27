@@ -8,3 +8,12 @@
     column-gap: 15px;
 }
 
+.family{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.faltu-div{
+    display: flex;
+}
